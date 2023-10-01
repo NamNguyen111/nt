@@ -15,7 +15,7 @@ CREATE TABLE `danh_muc` (
   `anh_danh_muc` varchar(3000),
   `ten_danh_muc` varchar(100),
   `thu_tu` integer,
-  `hien_thi_trang_chu` varchar(10)
+  `hien_thi_trang_chu` varchar(10),
   `hien_thi` varchar(10)
 );
 
@@ -34,7 +34,7 @@ CREATE TABLE `san_pham` (
   `da_ban` integer,
   `luot_xem` integer,
   `hien_thi` varchar(10),
-  `tinh_trang` varchar(30),
+  `tinh_trang` varchar(30)
 );
 
 CREATE TABLE `san_pham_desc` (
