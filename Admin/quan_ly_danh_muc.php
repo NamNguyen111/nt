@@ -72,8 +72,8 @@
                                                                                     } ?>
                                     </td>
 
-                                    <td style="width: 80px;"><input class="updateorder" style="width: 50px;" rel="/quantri/economy/productcategory/updateorder/id/53254" type="text" value="<?php echo ($categorie['thu_tu']) ?>" name="cat_order" id="cat_order" /></td>
-                                    <td style="width: 100px;" align="center"><a class="fa-solid fa-pen-to-square" href="suadanhmuc.php"></a>&emsp;<a class="fa-solid fa-trash" href="xoadanhmuc.php"></a></td>
+                                    <td style="width: 80px;"><input class="updateorder" style="width: 50px;" rel="/quantri/economy/productcategory/updateorder/id/53254" type="text" value="<?php echo ($categorie['thu_tu']) ?>" name="cat_order" id="cat_order" readonly/></td>
+                                    <td style="width: 100px;" align="center"><a class="fa-solid fa-pen-to-square" href="suadanhmuc.php?ma=<?php echo($categorie['id']); ?>"></a>&emsp;<a class="fa-solid fa-trash" href="xoadanhmuc.php?ma=<?php echo($categorie['id']); ?>"></a></td>
                                 </tr>
                             <?php } ?>
                         </tbody>

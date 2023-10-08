@@ -12,7 +12,7 @@ CREATE TABLE `user` (
 
 CREATE TABLE `danh_muc` (
   `id` integer PRIMARY KEY AUTO_INCREMENT,
-  `anh_danh_muc` varchar(3000),
+  `anh_danh_muc` text,
   `ten_danh_muc` varchar(100),
   `thu_tu` integer,
   `hien_thi_trang_chu` varchar(10),

@@ -10,9 +10,14 @@ if(isset($_POST['hien_thi_trang_chu']) && $_POST['hien_thi_trang_chu'] == "1"){
     $hien_thi_trang_chu = "co";
 }
 else{
-    $hien_thi_trang_chu = "rac";
+    $hien_thi_trang_chu = "khong";
 }
-$trang_thai = $_POST['trang_thai'];
+if(isset($_POST['trang_thai']) && $_POST['trang_thai'] == "1"){
+    $trang_thai = "co";
+}
+else{
+    $trang_thai = "khong";
+}
 
 
 $folder = "anh_danh_muc/";
@@ -27,6 +32,9 @@ $sql = "insert into danh_muc(anh_danh_muc, ten_danh_muc, thu_tu, hien_thi_trang_
         values('$path_file', '$ten_danh_muc', '$thu_tu_hien_thi', '$hien_thi_trang_chu', '$trang_thai')
 "; 
 
-mysqli_query($connect, $sql);
 
+
+mysqli_query($connect, $sql);
 mysqli_close($connect);
+
+header('location: quan_ly_danh_muc.php');

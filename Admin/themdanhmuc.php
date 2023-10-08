@@ -74,7 +74,7 @@
                         <div class="mb-3 row">
                             <label for="inputPassword" class="col-sm-2 col-form-label">Hiển thị ở trang chủ</label>
                             <div class="col-sm-10">
-                                <input name="hien_thi_trang_chu" id="ProductCategories_showinhome" value="1" type="checkbox" />
+                                <input name="hien_thi_trang_chu" id="ProductCategories_showinhome" value="1" type="checkbox"/>
                             </div>
                         </div>
 
@@ -100,11 +100,6 @@
                             <input class="btn btn-primary" href="quan_ly_danh_muc.php" id="btnAddCate" type="submit" value="Tạo danh mục" />
                         </div>
                     </form>
-
-
-
-
-
 
 
 
